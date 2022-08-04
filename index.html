@@ -1,0 +1,23 @@
+<head>
+<title>Test 1 | Nutchaya  K.</title>
+</head>
+<body>
+    <h1>Test 1 </h1>
+    <script>
+        const numbers = ['26','801','36','25','415','62','24','97','725']
+        var result=0 , arrays = []
+        for (let i = 0; i < numbers.length; i++) {
+            var max=0;
+            arrays = numbers[i].split('');
+            for(let j=0 ; j < arrays.length ; j++){
+                var num = parseInt( arrays[j] )
+                if(num > max){
+                    max=num;
+                }
+            }
+            result+=max;
+        }
+        console.log("result = ",result)
+    </script>
+
+</body>
